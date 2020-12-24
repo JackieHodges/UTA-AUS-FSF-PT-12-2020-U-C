@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var rock = "rocks";
+var paper = "paper";
+var scissors = "scissors";
+var wins = 0;
+var loses = 0;
+var ties = 0;
+var totalGames = 0;
+
+
+// var computerPicks = ["rock", "paper", "scissors"];
+
+for (var i = 1; i<11; i++){
+var humanPicks = prompt("This is game number " + i + ". Pick one: rock, paper, or scissors");
+    if (humanPicks === "rock" || humanPicks === "paper" || humanPicks === "scissors"){
+        console.log("Your Pick: " + humanPicks);
+
+    }else {
+        var humanPicks = prompt("Try again. Pick one exactly: rock, paper, or scissors");
+    }
+
+    // This is the computer 
+    var num = Math.random();
+
+        if (num < 0.33) {
+            var computerPick = "rock";
+            console.log("Computer picks: " + computerPick);
+        }
+
+        else if (num < 0.66){
+            var computerPick = "paper";
+            console.log("Computer picks: " + computerPick);
+        }
+
+        else {
+            var computerPick = "scissors";
+            console.log("Computer picks: " + computerPick);
+        }
+
+        //game rules
+        if (humanPicks === "rock" && computerPick === "scissors"){
+            alert("you win");
+            wins=wins+1;
+            totalGames= totalGames + 1;
+            console.log("Game Number: " + totalGames);
+            console.log("Wins: " + wins);
+            console.log("Loses: " + loses);
+            console.log("Ties: " + ties);
+        }
+
+        else if (humanPicks === "scissors" && computerPick === "paper"){
+            alert("you win");
+            wins=wins+1;
+            totalGames= totalGames + 1;
+            console.log("Game Number: " + totalGames);
+            console.log("Wins: " + wins);
+            console.log("Loses: " + loses);
+            console.log("Ties: " + ties);
+        }
+
+        else if (humanPicks === "paper" && computerPick === "rock"){
+            alert("you win");
+            wins=wins+1;
+            totalGames= totalGames + 1;
+            console.log("Game Number: " + totalGames);
+            console.log("Wins: " + wins);
+            console.log("Loses: " + loses);
+            console.log("Ties: " + ties);
+        }
+
+        else if (humanPicks ===  computerPick){
+            alert("you tie");
+            ties=ties+1;
+            totalGames= totalGames + 1;
+            console.log("Game Number: " + totalGames);
+            console.log("Wins: " + wins);
+            console.log("Loses: " + loses);
+            console.log("Ties: " + ties);
+        }
+
+        else{
+            alert("you lose");
+            loses=loses+1;
+            totalGames= totalGames + 1;
+            console.log("Game Number: " + totalGames);
+            console.log("Wins: " + wins);
+            console.log("Loses: " + loses);
+            console.log("Ties: " + ties);
+        }
+}
+
+
+
+
+</script>    
+</body>
+</html>
