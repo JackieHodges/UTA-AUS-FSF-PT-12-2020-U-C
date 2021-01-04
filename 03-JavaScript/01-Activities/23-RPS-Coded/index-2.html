@@ -13,10 +13,11 @@ var wins = 0;
 var loses = 0;
 var ties = 0;
 //computer picks
-var computerPick=["rock", "paper", "scissors"];
+var computerChoice=["rock", "paper", "scissors"];
 
 for (var i = 1; i < 3; i++){
     //ask user for their pick
+    console.log("Game number: " + i);
     var userPick= prompt("Please pick rock, paper, or scissors");
     console.log("User picked: " + userPick);
     
@@ -25,69 +26,41 @@ for (var i = 1; i < 3; i++){
 
 
     if (num < 0.33){
-        console.log("Computer picked: " + computerPick[0]);
+        console.log("Computer picked: " + computerChoice[0]);
+        var computerPick = computerChoice[0];
     } 
 
     else if (num < 0.66){
-        console.log("Computer picked: " + computerPick[1]);
+        console.log("Computer picked: " + computerChoice[1]);
+        var computerPick = computerChoice[1];
     } 
 
     else {
-        console.log("Computer picked: " + computerPick[2]);
+        console.log("Computer picked: " + computerChoice[2]);
+        var computerPick = computerChoice[2];
     }
     
     //game rules
-    if (userPick === "rock" && computerPick === "scissors"){
+    if ((userPick === "rock" && computerPick === "scissors") || (userPick === "paper" && computerPick === "rock")||(userPick === "scissors" && computerPick === "paper")){
         console.log("You Win!!");
-        wins=wins+1
-        console.log("Game Number: " + i);
-        console.log("Wins: " + wins);
-        console.log("Loses: " + loses);
-        console.log("Ties: " + ties);
-
-    }
-
-    else if (userPick === "paper" && computerPick === "rock"){
-        console.log("You Win!!");
-        wins=wins+1
-        console.log("Game Number: " + i);
-        console.log("Wins: " + wins);
-        console.log("Loses: " + loses);
-        console.log("Ties: " + ties);
-
-    }
-
-    else if (userPick === "scissors" && computerPick === "paper"){
-        console.log("You Win!!");
-        wins=wins+1
-        console.log("Game Number: " + i);
-        console.log("Wins: " + wins);
-        console.log("Loses: " + loses);
-        console.log("Ties: " + ties);
-
+        wins++;
     }
 
     else if (userPick === computerPick ){
         console.log("You Tie!!");
-        ties=ties+1
-        console.log("Game Number: " + i);
-        console.log("Wins: " + wins);
-        console.log("Loses: " + loses);
-        console.log("Ties: " + ties);
-
+        ties++;
     }
 
     else {
         console.log("You Lose!!");
-        loses=loses+1
-        console.log("Game Number: " + i);
-        console.log("Wins: " + wins);
-        console.log("Loses: " + loses);
-        console.log("Ties: " + ties);
-
+        loses++;
     }
-
 }
+console.log("Total Scores")
+console.log("Wins: " + wins);
+console.log("Loses: " + loses);
+console.log("Ties: " + ties);
+
 </script>    
 </body>
 </html>

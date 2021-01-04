@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var computerChoices = ["rock", "paper", "scissors"];
+        var wins=0;
+        var loses=0;
+        var ties=0;
+        var round=0;
+
+        for (var i = 0; i<2; i++){
+            var humansPick = prompt("Pick rock, paper, or scissors");
+            console.log("Human picked " + humansPick);
+       
+            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+            console.log("Computer picked " + computerGuess);
+        }
+
+    </script>
+</body>
+</html>
