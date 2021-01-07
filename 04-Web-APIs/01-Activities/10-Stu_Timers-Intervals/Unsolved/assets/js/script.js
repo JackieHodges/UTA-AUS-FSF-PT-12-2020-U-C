@@ -26,7 +26,19 @@ function prepareRead() {
 }
 
 function speedRead() {
-  //Add Your Code Here
+  
+  mainEl.appendChild(bodyEl);
+
+  var poemInterval = setInterval(
+    function(){
+      if (words[i] === undefined){
+        clearInterval(poemInterval);
+      }
+      else{
+        mainEl.textContent = words[i];
+      }
+
+  }, 10000)
 }
 
 prepareRead();
