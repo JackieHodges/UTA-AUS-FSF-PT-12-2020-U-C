@@ -1,6 +1,6 @@
-// TODO: Which element is the following line of code selecting?
+// TODO: Which element is the following line of code selecting? Div with class carouselbox
 var carousel = document.querySelector(".carouselbox");
-// TODO: Which element is the following line of code selecting?
+// TODO: Which element is the following line of code selecting? divs with class next and prev
 var next = carousel.querySelector(".next");
 var prev = carousel.querySelector(".prev");
 var index = 0;

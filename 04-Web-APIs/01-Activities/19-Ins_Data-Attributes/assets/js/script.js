@@ -2,6 +2,7 @@ var imageContainer = document.querySelector(".img-container");
 
 imageContainer.addEventListener("click", function(event) {
   var element = event.target;
+  console.log(event);
 
   if (element.matches("img")) {
     var state = element.getAttribute("data-state");

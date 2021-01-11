@@ -1,4 +1,4 @@
-var submitEl = document.querySelector("#submit");
+  var submitEl = document.querySelector("#submit");
 var nameInput = document.querySelector("#name");
 var emailInput = document.querySelector("#email");
 var submissionResponseEl = document.querySelector("#response");
