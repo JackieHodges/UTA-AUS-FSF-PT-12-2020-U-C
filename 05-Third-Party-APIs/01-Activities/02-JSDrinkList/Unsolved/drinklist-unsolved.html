@@ -29,7 +29,19 @@
 
     // 1. Create code that "grabs" the div with the matching id (#drink-options);
     // ...
+      // var divEl = document.querySelector("#drink-options");
+      // for (var i = 0; i < drinkList.length; i++){
+      //   var childEl = document.createElement("div");
+      //   childEl.textContent = drinkList[i];
+      //   divEl.appendChild(childEl);
+      // }
 
+        drinkList.forEach(function (currVal, index){
+          divEl = document.querySelector("#drink-options");
+          var childEl = document.createElement("div");
+          childEl.textContent = currVal;
+          divEl.appendChild(childEl);
+        })
 
     // ...
 
