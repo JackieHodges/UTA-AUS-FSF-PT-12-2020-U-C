@@ -9,3 +9,7 @@ fetch(
     console.log(data);
   });
 // Parameter explanation.
+// 10 results per page
+// issues of state open to show up
+// sort by when it was created
+// descending  
