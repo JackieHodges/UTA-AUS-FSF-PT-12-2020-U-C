@@ -23,6 +23,7 @@ function renderLastRegistered() {
 
   userEmailSpan.textContent = email;
   userPasswordSpan.textContent = password;
+
 }
 
 signUpButton.addEventListener("click", function(event) {
