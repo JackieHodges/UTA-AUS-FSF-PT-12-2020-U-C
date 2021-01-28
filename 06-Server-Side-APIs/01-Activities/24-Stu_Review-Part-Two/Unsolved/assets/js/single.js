@@ -3,17 +3,18 @@ var issueContainerEl = document.querySelector('#issues-container');
 var limitWarningEl = document.querySelector('#limit-warning');
 
 var getRepoName = function () {
-  // Where is this value coming from?
+  // Where is this value coming from? its the ending of the href of the clicked repo.
   // TODO: Write your answer here
   var queryString = document.location.search;
   var repoName = queryString.split('=')[1];
+  console.log(repoName);
 
   if (repoName) {
     repoNameEl.textContent = repoName;
 
     getRepoIssues(repoName);
   } else {
-    // Under what condition will this run?
+    // Under what condition will this run? don't have repo name
     // TODO: Write your answer here
     document.location.replace('./index.html');
   }
