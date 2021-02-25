@@ -1,6 +1,7 @@
 {
-  "name": "14-Ins_Inquirer-Demo",
+  "name": "20-Stu_Inquirer-Users",
   "version": "1.0.0",
+  "description": "Work with a partner to implement the following user story:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.5.2"
-  },
-  "description": ""
+    "inquirer": "^7.3.3"
+  }
 }
