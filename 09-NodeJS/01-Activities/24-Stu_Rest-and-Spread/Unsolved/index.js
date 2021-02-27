@@ -15,6 +15,7 @@ const addition = (x, y, z) => {
 };
 // TODO: What do you expect to be logged in the console?
 console.log(addition(1, 2, 3));
+console.log(addition(1, 2, 3, 4));
 
 // TODO: What is this syntax that is being used as the parameter?
 const additionSpread = (...array) => {
