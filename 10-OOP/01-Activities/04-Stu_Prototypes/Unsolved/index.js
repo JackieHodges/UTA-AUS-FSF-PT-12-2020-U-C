@@ -1,4 +1,4 @@
-// TODO: Add a comment describing what kind of function this is
+// TODO: Add a comment describing what kind of function this is, constructor 
 function Character(name, type, age, strength, hitpoints) {
   this.name = name;
   this.type = type;
