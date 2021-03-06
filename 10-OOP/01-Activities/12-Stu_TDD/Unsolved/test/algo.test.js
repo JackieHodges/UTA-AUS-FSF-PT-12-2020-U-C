@@ -3,6 +3,15 @@ const Algo = require("../algo");
 describe("Algo", () => {
   describe("reverse", () => {
     // TODO: Write a test for the `reverse` method that should take a string as an argument and return a new reversed version of the string
+    it("should take a string and return a new reversed version of the string", () => {
+      const str = "cat";
+
+      const reversed = "tac";
+
+      const result = new Algo.reverse(str); 
+
+      expect(result).toEqual(reversed);
+    });
   });
 
   describe("isPalindrome", () => {
