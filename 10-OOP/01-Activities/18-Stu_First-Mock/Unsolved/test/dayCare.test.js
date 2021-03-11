@@ -25,12 +25,17 @@ describe("DayCare", () => {
       const child = new Child("Tammy", 8);
       const dayCare = new DayCare();
 <<<<<<< HEAD
+<<<<<<< HEAD
       const mock = jest.spyOn(console, "log");
       mock.mockImplementation();
 =======
       //const mock = jest.spyOn();
       //mock.mockImplementation();
 >>>>>>> 6f54ef626ae26462084a2dbc9ac3d6dcdf9784d9
+=======
+      const mock = jest.spyOn();
+      mock.mockImplementation();
+>>>>>>> f16b84d1e626ed257fb48f75b744e127c8b11f0a
 
       dayCare.addChild(child);
 
